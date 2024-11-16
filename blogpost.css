@@ -1,0 +1,116 @@
+/* Adjusted CSS for the personal blog */
+
+/* Style for the post image */
+.post-img {
+    height: 404px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;    /* Center the image vertically (optional) */
+    background-color: #f4f4f4; /* Optional: Add a background color for contrast */
+}
+
+.post-img img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Make the image fill the container height */
+    max-width: 100%; /* Prevent overflow horizontally */
+}
+
+/* Blog post content */
+.blog-post-content {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.blog-post-content h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Ensure a clean font for readability */
+    color: #333; /* Dark text for good contrast */
+    margin-bottom: 20px;
+}
+
+.blog-post-content p {
+    font-size: 18px;
+    color: #555; /* Neutral color for text readability */
+    margin-bottom: 16px;
+    text-align: justify; /* Makes text more readable */
+}
+
+/* Layout for related articles */
+.row {
+    display: flex;
+    gap: 20px; /* Add spacing between elements */
+    flex-wrap: wrap; /* Ensure items wrap nicely on smaller screens */
+}
+
+.more-post {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Subtle border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.home-article-img img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Blog post metadata */
+.blogpost-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Divider for cleaner design */
+}
+
+.author-info {
+    margin: 12px 0;
+}
+
+.author-info div {
+    padding: 4px 0px;
+    font-family: var(--font2);
+    color: #444; /* Neutral dark color */
+}
+
+/* Social media icons */
+.social {
+    padding-right: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social svg {
+    fill: #444; /* Neutral dark color */
+    transition: transform 0.2s, fill 0.2s;
+}
+
+.social svg:hover {
+    transform: scale(1.2);
+    fill: #007bff; /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogpost-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social {
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+}

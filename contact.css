@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #0073e6;
+ 
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Projects Section */
+.project-category {
+  margin-bottom: 30px;
+}
+
+.project-card {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.project-card img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-card .details {
+  flex: 1;
+}
+
+/* Contact Section */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0073e6;
+  display: flex;
+  align-items: center;
+}
+
+.contact-links a i {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.contact-links a:hover {
+  color: #005bb5;
+}
+
+/* CV Section */
+.download-cv {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.download-cv:hover {
+  background: #005bb5;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
